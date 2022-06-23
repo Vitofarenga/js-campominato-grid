@@ -10,10 +10,12 @@ body{
     border: solid white 2px;
     width: 600px;
     height: 600px;
-    margin-left: 200px;
-    margin-top: 200px;
     display: flex;
     flex-wrap: wrap;
+}
+#grid-conotainer{
+    margin-left: 200px;
+    margin-top: 200px;
 }
 .blocco{
     width: calc(100% / 10);
