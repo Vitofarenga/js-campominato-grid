@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(40, 40, 126);
+}
+#container{
+    border: solid white 2px;
+    width: 600px;
+    height: 600px;
+    margin-left: 200px;
+    margin-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.blocco{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: solid white 2px;
+}
