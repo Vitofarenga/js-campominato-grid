@@ -1,16 +1,22 @@
 
-const contenitore = document.getElementById('grid-container');
+const contenitore = document.getElementById('container');
 
 
 
-for(let i = 1; i == 1; i++){
-    const quadratoG = creaQuadrato();
 
-    contenitore.append(quadratoG);
-}
 
-function creaQuadrato(){
-    const quadrato = document.createElement('div');
-    quadrato.classList.add('container');
-    return quadrato;
+const button = document.getElementById('btn')
+
+button.addEventListener("click"){
+    for(let i = 0; i < 100; i++){
+        const quadratino = creaQuadrato();
+    
+        contenitore.append(quadratino);
+    }
+    
+    function creaQuadrato(){
+        const quadrato = document.createElement('div');
+        quadrato.classList.add('blocco');
+        return quadrato;
+    }
 }
