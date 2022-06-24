@@ -1,12 +1,9 @@
 
 const contenitore = document.getElementById('container');
 
-
-
-
-
 for(let i = 0; i < 100; i++){
     const quadratino = creaQuadrato();
+    quadratino.innerHTML = i;
 
     contenitore.append(quadratino);
 
@@ -22,6 +19,4 @@ function creaQuadrato(){
     return quadrato;
 }
 
-button.addEventListener('click', function(){
-    creaQuadrato()
-})
+button.addEventListener('click', creaQuadrato());
